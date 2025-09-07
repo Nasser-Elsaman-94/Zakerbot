@@ -5,6 +5,7 @@ import AuthPage from './components/auth/AuthPage';
 import { MainChatPage } from './components/MainChatPage';
 import HomePage from './components/pages/HomePage';
 import { ToastProvider } from './contexts/ToastContext';
+import './index.css';
 
 type View = 'home' | 'auth' | 'chat';
 type AuthMode = 'login' | 'register';
