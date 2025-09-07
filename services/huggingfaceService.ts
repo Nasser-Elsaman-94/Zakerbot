@@ -11,7 +11,7 @@ export const analyzePersonalityHuggingFace = async (
   const response = await fetch('https://api-inference.huggingface.co/models/Nasserelsaman/microsoft-finetuned-personality', {
     method: 'POST',
     headers: {
-      'Authorization': 'Bearer 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',
+      'Authorization': 'Bearer "HUGGINGFACE_API_TOKEN"',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ inputs: prompt })
@@ -32,3 +32,4 @@ export const analyzePersonalityHuggingFace = async (
   }
   return traits;
 };
+
